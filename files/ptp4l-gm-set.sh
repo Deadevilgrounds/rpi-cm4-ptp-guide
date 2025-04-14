@@ -24,3 +24,5 @@ done
                 frequencyTraceable      0
                 timeSource              0x20
 "
+
+printf "\$PMTK314,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0*29\r\n" > /dev/ttyAMA0
