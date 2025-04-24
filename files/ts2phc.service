@@ -6,7 +6,6 @@ After=time-set.target
 [Service]
 Type=simple
 EnvironmentFile=/etc/default/ptp4l-gm
-ExecStartPre=/usr/sbin/phc_ctl -Q $EXTTS_IFACE "set;" adj $UTC_OFFSET
 ExecStart=/usr/sbin/ts2phc -s nmea \
   -c $EXTTS_IFACE \
   -l $LOG_LEVEL \

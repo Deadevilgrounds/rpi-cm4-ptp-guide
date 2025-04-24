@@ -6,7 +6,7 @@ Requires=ts2phc.service
 [Service]
 Type=simple
 EnvironmentFile=/etc/default/ptp4l-gm
-ExecStart=/usr/sbin/phc2sys -s $EXTTS_IFACE -E ntpshm -O -${UTC_OFFSET} -N $N_SAMPLES -R $SAMPLE_RATE -l $LOG_LEVEL
+ExecStart=/usr/sbin/phc2sys -s $EXTTS_IFACE -r -N $N_SAMPLES -R $SAMPLE_RATE -l $LOG_LEVEL -S 60 -F 60
 
 [Install]
 WantedBy=multi-user.target

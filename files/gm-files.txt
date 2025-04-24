@@ -1,4 +1,5 @@
 /etc/default/ptp4l-gm
+/etc/linuxptp/ptp4l-gm.conf
 /etc/systemd/system/ts2phc.service
 /etc/systemd/system/ptp4l-gm.service
 /etc/systemd/system/phc2shm.service
